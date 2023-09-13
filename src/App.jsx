@@ -9,7 +9,7 @@ import "./index.css"
 // Hooks
 import { useForm } from './hooks/useform';
 
-function App() {
+ export default function App() {
 
  const formComponents = [
   <UseForm />,
@@ -17,14 +17,18 @@ function App() {
   <Thenks /> 
  ];
 
- const { currentStep, currentComponents} = useForm(formComponents);
+ const { currentStep, currentComponents, changeStep, isLastStep, isFirstStep} = useForm(formComponents);
 
   return (
-    <div className="App">
+    <div className="app">
     <Menu />
-    <Formulario/>
+    <Formulario
+    changeStep={changeStep}
+    currentStep={currentStep}
+    currentComponents={currentComponents}
+    isLastStep={isLastStep}
+    isFirstStep={isFirstStep}
+    />
     </div>
   );
 }
-
-export default App;
