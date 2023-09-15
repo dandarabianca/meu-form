@@ -1,0 +1,27 @@
+.app{
+    padding: 2rem;
+}
+/* UseForm */
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+label{
+    font-weight: bold;
+    color: #3c096c;
+    font-size: 0.9rem;
+}
+
+input, textarea{
+    padding: 0.6rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: #9d8189 0px 2px 8px 0px;
+}
+
+textarea{
+    height: 120px;
+}

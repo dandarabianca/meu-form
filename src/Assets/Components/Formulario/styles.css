@@ -1,7 +1,37 @@
 .form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 1.5rem;
-    box-shadow: rgba(100, 100, 111, .2) 0px 7px 29px 0px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: rgba(97, 97, 194, 0.2) 0px 7px 29px 0px;
+}
+.form-container form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.inputs-container {
+  min-height: 280px;
+}
+.action {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.action button {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #dfdfdf;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+button span{
+  color: black;
+}
+.action button:hover{
+    background-color: #9d8189;
 }

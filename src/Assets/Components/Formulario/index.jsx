@@ -1,7 +1,8 @@
 import React from "react";
-import "./styles.css"
+import "./styles.css";
 import {GrFormNext, GrFormPrevious} from "react-icons/gr";
 import {FiSend} from "react-icons/fi";
+import Steps from "../Steps";
 
 export default function Formulario ({
   changeStep,  
@@ -11,11 +12,11 @@ export default function Formulario ({
   isFirstStep,
 }) {
     return(
-    <div className="form-contianer">
-        <span> etapas</span>
+    <div className="form-container">
+        <Steps currentStep={currentStep}/>
 
       <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
-        <div className=" inputs-container">
+        <div className="inputs-container">
           {currentComponents}</div>
           <div className="action">
             {!isFirstStep && (

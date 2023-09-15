@@ -1,0 +1,28 @@
+.thenks-container{
+    text-align: center;
+}
+
+.thenks-container h2{
+    margin-bottom: 1rem;
+}
+
+.thenks-container span{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+.thenks-container h3{
+    margin: 1rem 0;
+}
+
+.review-data{
+    text-align: left;
+}
+
+.review-data svg {
+    margin-left: 5px;
+}
+
+.review-data h4{
+    font-weight: bold;
+}
