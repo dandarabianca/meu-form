@@ -10,7 +10,8 @@ export default function UseForm( {data, updateFieldHandler} ) {
         id="name"
         placeholder="Digite seu nome"
         required
-        value={data.name}
+        value={data.name || ""}
+        onChange={(e) => updateFieldHandler("name", e.target.value)}
       />
       <div className="form-control">
         <label htmlFor="email">E-mail:</label>
@@ -20,6 +21,20 @@ export default function UseForm( {data, updateFieldHandler} ) {
           id="email"
           placeholder="Digite seu e-mail"
           required
+          value={data.email || ""}
+          onChange={(e) => updateFieldHandler("email", e.target.value)}
+        />
+      </div>
+      <div className="form-control">
+        <label htmlFor="tell">Telefone:</label>
+        <input
+        type="tell"
+        name="tell"
+        id="tell"
+        placeholder="Digite seu número"
+        required
+        value={data.tell}
+        onChange={(e) => updateFieldHandler("tell", e.target.value)}
         />
       </div>
     </div>

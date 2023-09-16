@@ -34,3 +34,6 @@
 .active > svg {
     fill: #240046;
 }
+.step span{
+    color: #240046;
+}
