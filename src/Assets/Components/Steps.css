@@ -38,8 +38,11 @@
     color: #240046;
 }
 
-@media (max-width: 470px){ 
+@media (max-width: 450px){ 
     .step svg{
         font-size: 1.4rem;
+    }
+    .step {
+        font-size: 0.9rem;
     }
 }
