@@ -37,3 +37,9 @@
 .step span{
     color: #240046;
 }
+
+@media (max-width: 470px){ 
+    .step svg{
+        font-size: 1.4rem;
+    }
+}
